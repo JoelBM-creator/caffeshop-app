@@ -1,0 +1,26 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <div id="menu">
+      <div id="menuIcon">
+        <img src="../../assets/images/icons/menu.svg">
+      </div>
+      <div id="menuSearch">
+        <img src="../../assets/images/icons/search.png">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="textField">
+    <span>It's Great</span> <span style="font-weight: bold; color: rgba(185,136,117,1);"> Day for <br> Coffee.</span>
+  </div>
+  <div class="coffesSection">
+    <div class="section" *ngFor="let coffe of coffes">
+      <img src={{coffe.coffeImage}}>
+      <span>{{coffe.coffeName}}</span>
+        <img src="../../assets/images/icons/next.svg" (click)="navCoffe(coffe.coffeNav)">
+    </div>
+
+  </div>
+</ion-content>

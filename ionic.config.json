@@ -1,0 +1,7 @@
+{
+  "name": "caffeshop-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

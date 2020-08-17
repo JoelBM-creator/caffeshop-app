@@ -1,0 +1,55 @@
+ion-toolbar {
+    --background: rgba(250,244,238,1);
+    --border-width: none !important;
+    --border-style: none !important;
+
+    #menu{
+        position: relative;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+ion-content {
+    --background: rgba(250,244,238,1) !important;
+
+    #textField {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Sen;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+    }
+    
+    .coffesSection {
+        margin-top: 30%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+
+        .section {
+            margin-top: 15%;
+
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10%;
+            align-items: center;
+            span {
+                white-space: nowrap;
+                padding-right: 30%;
+                text-align: left;
+                font-family: Sen;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+            }
+        }
+    }
+}

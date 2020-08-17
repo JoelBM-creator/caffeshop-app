@@ -1,0 +1,71 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+ion-tab-bar {
+    --background: white !important;
+    --background-focused: none !important;
+    width: auto;
+    height: 10%;
+    border-radius: 50px;
+    --border: none !important;
+    ion-tab-button {
+        text-align: center !important;
+        margin-top: -10px !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: 25px !important;
+        
+        &:nth-child(1) {
+            background: url(./assets/images/icons/homea.svg);
+        }
+        &:nth-child(2) {
+            background: url(./assets/images/icons/routea.svg);
+        }
+        &:nth-child(3) {
+            background: url(./assets/images/icons/coffea.svg);
+        }
+        &:nth-child(4) {
+            background: url(./assets/images/icons/profilea.svg);
+        }
+
+        &[aria-selected="true"] {
+            &:nth-child(1) {
+                background: url(./assets/images/icons/home.svg);
+            }
+            &:nth-child(2) {
+                background: url(./assets/images/icons/route.svg);
+            }
+            &:nth-child(3) {
+                background: url(./assets/images/icons/coffe.svg);
+            }
+            &:nth-child(4) {
+                background: url(./assets/images/icons/profile.svg);
+            }
+          }
+    } 
+}

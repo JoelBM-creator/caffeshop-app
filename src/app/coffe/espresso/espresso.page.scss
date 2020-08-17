@@ -1,0 +1,145 @@
+ion-toolbar {
+    --background: url(../../../assets/images/bg_toolbar.png) 0 0/100% 100% no-repeat !important;
+    height: 20em;
+    --border-width: none !important;
+    --border-style: none !important;
+    -webkit-box-shadow: 0px 0px 50px 88px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 0px 50px 88px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 50px 88px rgba(0,0,0,0.06);
+
+    #menu{
+        position: relative;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        align-items: center;
+
+        #title {
+            padding-left: 30%;
+            white-space: nowrap;
+            text-align: center;
+            font-family: Sen;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 23px;
+        }
+    }
+
+    #imageCoffe {
+        padding-top: 12%;
+        padding-left: 35%;
+        width: 150%;
+
+        img {
+            width: 30%;
+        }
+    }
+}
+
+ion-content {
+
+    span {
+        white-space: nowrap;
+        text-align: left;
+        font-family: Sen;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(45, 20, 13, 1);
+    }
+
+    #itemCoffe {
+        position: relative;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flexbox;
+        align-items: center;
+
+        #itemsPriceAndQuant {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            #price {
+                padding-top: 2%;
+                white-space: nowrap;
+                text-align: left;
+                padding-left: 2px;
+                font-family: Sen;
+                font-size: normal;
+                font-weight: bold;
+                font-size: 30px;
+                color: rgba(207, 151, 117, 1);
+            }
+        }
+    }
+
+    #minus {
+        width: 50px;
+        --background: url(../../../assets/images/icons/minus.svg) 0 0/100% 100% no-repeat !important;
+    }
+    #plus {
+        width: 50px;
+        --background: url(../../../assets/images/icons/plus.svg) 0 0/100% 100% no-repeat !important;
+    }
+
+    #size {
+        padding-left: 5%;
+        padding-top: 5%;
+        #sizes{
+            display: flex;
+            align-items: center;
+            padding-top: 2%;
+        }
+    }
+
+    #sugar {
+        padding-left: 5%;
+        padding-top: 5%;
+
+        #sugarOpt {
+            opacity: 0.3;
+        }
+    }
+
+    .expand-link {
+        display: inline-block;
+      }
+      .expand-link .icon-contract {
+        display: none;
+      }
+      .expand-link:hover .icon-expand,
+      .expand-link:active .icon-expand {
+        display: none;
+      }
+      .expand-link:hover .icon-contract,
+      .expand-link:active .icon-contract {
+        display: block;
+      }
+
+      
+    .expand-sugar {
+        display: inline-block;
+      }
+      .expand-sugar .icon-contract {
+        display: none;
+      }
+      .expand-sugar:hover .icon-expand,
+      .expand-sugar:active .icon-expand {
+        display: none;
+      }
+      .expand-sugar:hover .icon-contract,
+      .expand-sugar:active .icon-contract {
+        display: block;
+      }
+      
+      a {
+          padding-left: 5%;
+      }
+
+      #addCart{
+          padding-top: 5%;
+          padding-left: 10%;
+      }
+}

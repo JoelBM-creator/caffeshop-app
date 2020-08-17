@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+    <div id="menu">
+      <ion-buttons slot="start">
+        <ion-button (click)="back()" fill="none">
+          <img src="../../../assets/images/icons/back.svg">
+        </ion-button>
+      </ion-buttons>
+      <div id="title">
+        <span>{{name}}</span>
+      </div>
+    </div>
+    <div id="imageCoffe">
+      <img src="../../../assets/images/coffesImgs/Cappuccino.svg">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="itemCoffe">
+    <div>
+      <span>{{name}}</span>
+    </div>
+    <div id="itemsPriceAndQuant">
+      <ion-label id="price" text-right>{{total}} €</ion-label>
+      <div id="quantity">
+        <ion-buttons slot="end">
+          <ion-button id="minus" (click)="minusQuant()" fill="none">
+            <img src="../../../assets/images/icons/minusicon.svg">
+          </ion-button>
+          <ion-label text-right>{{quantity}}</ion-label>
+          <ion-button id="plus" (click)="moreQuant()" fill="none">
+            <img src="../../../assets/images/icons/plusicon.svg">
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+  </div>
+
+  <div id="size">
+    <span>Size</span>
+    <div id="sizes">
+      <a (click)="priceSmall()" class="expand-link">
+        <img class="icon-expand"  src="../../../assets/images/icons/smallinac.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/smallacti.svg">
+      </a>
+
+      <a (click)="priceMedium()" class="expand-link">
+        <img class="icon-expand"  src="../../../assets/images/icons/mediuminac.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/mediumacti.svg">
+      </a>
+
+      <a (click)="priceLarge()" class="expand-link">
+        <img class="icon-expand"  src="../../../assets/images/icons/largeinac.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/largeacti.svg">
+      </a>
+    </div>
+  </div>
+
+  <div id="sugar">
+    <span>Sugar </span> <span id="sugarOpt">(in Cubes)</span>
+    <div id="sugars">
+      <a class="expand-sugar">
+        <img class="icon-expand"  src="../../../assets/images/icons/noSugardes.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/noSugaract.svg">
+      </a>
+
+      <a class="expand-sugar">
+        <img class="icon-expand"  src="../../../assets/images/icons/oneSugardes.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/oneSugaract.svg">
+      </a>
+
+      <a class="expand-sugar">
+        <img class="icon-expand"  src="../../../assets/images/icons/twoSugardes.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/twoSugaract.svg">
+      </a>
+
+      <a class="expand-sugar">
+        <img class="icon-expand"  src="../../../assets/images/icons/threeSugardes.svg">
+        <img class="icon-contract"  src="../../../assets/images/icons/threeSugaract.svg">
+      </a>
+    </div>
+  </div>
+
+  <div id="addCart">
+    <img src="../../../assets/images/icons/btn-addcart.svg">
+  </div>
+</ion-content>

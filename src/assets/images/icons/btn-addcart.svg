@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="317.586" height="175.172" viewBox="0 0 317.586 175.172">
+  <defs>
+    <filter id="btn_bg" x="0" y="0" width="317.586" height="175.172" filterUnits="userSpaceOnUse">
+      <feOffset dy="28" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#cf9775" flood-opacity="0.439"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn" transform="translate(-15.293 32.379)">
+    <g transform="matrix(1, 0, 0, 1, 15.29, -32.38)" filter="url(#btn_bg)">
+      <rect id="btn_bg-2" data-name="btn bg" width="197.586" height="55.172" rx="27.586" transform="translate(60 32)" fill="#cf9775"/>
+    </g>
+    <text id="Add_to_cart" data-name="Add to cart" transform="translate(174.293 33.621)" fill="#fff" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="-44.574" y="0">Add to cart</tspan></text>
+  </g>
+</svg>

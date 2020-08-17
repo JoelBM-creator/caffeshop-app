@@ -1,0 +1,62 @@
+ion-content {
+    --background: url(../../assets/images/bg_k.png) 0 0/100% 100% no-repeat !important;
+}
+
+#logo{
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    overflow: visible;
+
+        #imgLogo{
+            position: absolute;
+            width: 116px;
+            left: 0px;
+            top: 49px;
+        }
+
+        .lineSmallerCoffe{
+            position: absolute;
+            width: 5px;
+            height: 30px;
+            left: 37px;
+            top: 14px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        .lineLargeCoffe{
+            position: absolute;
+            width: 5px;
+            height: 44px;
+            left: 53px;
+            top: 0px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+    }
+
+    #logoSvg {
+        position: absolute;
+        left: 4.5px;
+
+        .line {
+            position: absolute;
+            overflow: visible;
+            width: 121px;
+            height: 5px;
+            left: -8px;
+            top: 127px;
+        }
+    }
+
+    #textLogo {
+        position: absolute;
+        top: 7em;
+        width: 6em;
+        text-align: left;
+        font-family: Sen;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: rgba(0,0,0,1);
+    }
